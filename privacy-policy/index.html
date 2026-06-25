@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — WebsitesByVan</title>
+  <meta name="description" content="Privacy Policy for WebsitesByVan by Van Beard Design. Learn how we collect, use, and protect your personal information." />
+  <link rel="canonical" href="https://speedyhypnosis.github.io/websitesbyvan/privacy-policy/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Privacy Policy — WebsitesByVan" />
+  <meta property="og:url" content="https://speedyhypnosis.github.io/websitesbyvan/privacy-policy/" />
+  <meta property="og:site_name" content="WebsitesByVan" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:    #0D1B2A;
+      --navy2:   #0f2340;
+      --gold:    #C9A84C;
+      --gold2:   #b8922e;
+      --white:   #ffffff;
+      --offwhite:#f5f7fa;
+      --gray:    #d1d5db;
+      --text:    #1e293b;
+      --muted:   #64748b;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .gold-bar {
+      height: 5px;
+      background: linear-gradient(90deg, #C9A84C, #F0D080, #C9A84C);
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 5px; left: 0; right: 0;
+      background: var(--navy);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1.5rem;
+      height: 56px;
+      border-bottom: 1px solid rgba(201,168,76,0.3);
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .nav-back {
+      color: var(--gray);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-back:hover { color: var(--gold); }
+
+    /* ── PAGE HEADER ── */
+    .page-header {
+      background: var(--navy);
+      padding: 90px 1.5rem 48px;
+      text-align: center;
+    }
+
+    .page-header p {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+
+    .page-header h1 {
+      font-family: 'Playfair Display', serif;
+      color: var(--white);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .page-header .last-updated {
+      color: var(--gray);
+      font-size: 0.9rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+    }
+
+    /* ── CONTENT ── */
+    .content {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 56px 1.5rem 80px;
+    }
+
+    .summary-box {
+      background: var(--offwhite);
+      border-left: 4px solid var(--gold);
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 3rem;
+    }
+
+    .summary-box h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: var(--navy);
+    }
+
+    .summary-box ul { list-style: none; padding: 0; }
+
+    .summary-box ul li {
+      padding: 0.3rem 0 0.3rem 1.5rem;
+      position: relative;
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    .summary-box ul li::before {
+      content: '→';
+      color: var(--gold2);
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+    }
+
+    .policy-section { margin-bottom: 2.5rem; }
+
+    .policy-section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--offwhite);
+    }
+
+    .policy-section h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--navy2);
+      margin: 1.25rem 0 0.5rem;
+    }
+
+    .policy-section p {
+      color: var(--text);
+      margin-bottom: 0.75rem;
+      font-size: 1rem;
+    }
+
+    .policy-section ul { list-style: none; margin: 0.5rem 0 0.75rem 0; }
+
+    .policy-section ul li {
+      padding: 0.25rem 0 0.25rem 1.5rem;
+      position: relative;
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    .policy-section ul li::before {
+      content: '•';
+      color: var(--gold2);
+      position: absolute;
+      left: 0;
+      font-weight: 700;
+    }
+
+    /* ── CONTACT BOX ── */
+    .contact-box {
+      background: var(--navy);
+      color: var(--white);
+      padding: 2rem;
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-box p { color: var(--gray); font-size: 1rem; margin-bottom: 0.4rem; }
+    .contact-box a { color: var(--gold); text-decoration: none; font-weight: 600; }
+    .contact-box a:hover { text-decoration: underline; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      border-top: 1px solid rgba(201,168,76,0.2);
+    }
+
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 0.4rem;
+    }
+
+    .footer-copy { color: var(--muted); font-size: 0.82rem; margin-top: 0.5rem; }
+    .footer-copy a { color: var(--muted); text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .content { padding: 40px 1.25rem 60px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="gold-bar"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="../" class="nav-logo">WebsitesByVan</a>
+    <a href="../" class="nav-back">← Back to Home</a>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <p>Van Beard Design</p>
+    <h1>Privacy Policy</h1>
+    <span class="last-updated">Last Updated: June 2026</span>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <!-- Summary -->
+    <div class="summary-box">
+      <h2>Summary of Key Points</h2>
+      <ul>
+        <li>We collect personal information you provide when you contact us or engage our services.</li>
+        <li>We do not sell your personal information to third parties.</li>
+        <li>We use your information to respond to inquiries and deliver web design services.</li>
+        <li>Payment is processed via PayPal Invoice — we do not store your payment credentials.</li>
+        <li>You have rights regarding your personal information, including the right to access, correct, or delete it.</li>
+        <li>We use industry-standard security measures to protect your data.</li>
+      </ul>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="policy-section">
+      <h2>1. Information We Collect</h2>
+      <h3>Information You Provide</h3>
+      <p>We collect information you voluntarily provide when you:</p>
+      <ul>
+        <li>Fill out the contact form on our site</li>
+        <li>Email or call us directly</li>
+        <li>Engage us for web design services</li>
+      </ul>
+      <p>This information may include: name, email address, phone number, brokerage name, and any message content you submit.</p>
+
+      <h3>Information Collected Automatically</h3>
+      <p>When you visit our site, certain information may be collected automatically, including:</p>
+      <ul>
+        <li>IP address and browser type</li>
+        <li>Pages visited and time spent on the site</li>
+        <li>Referring website addresses</li>
+        <li>Device information</li>
+      </ul>
+      <p>This information is collected using cookies and similar tracking technologies. You can control cookie settings through your browser.</p>
+
+      <h3>Payment Information</h3>
+      <p>Payment for services is processed via PayPal Invoice. We do not store your credit card number or payment credentials on our servers. Please review PayPal's privacy policy for information on how payment data is handled.</p>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="policy-section">
+      <h2>2. How We Use Your Information</h2>
+      <p>We use the information we collect to:</p>
+      <ul>
+        <li>Respond to your inquiries and service requests</li>
+        <li>Deliver and manage web design services</li>
+        <li>Send project updates and invoices</li>
+        <li>Improve our site and service offerings</li>
+        <li>Comply with legal obligations</li>
+      </ul>
+      <p>We will not use your information for any purpose not described in this Privacy Policy without first obtaining your consent.</p>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="policy-section">
+      <h2>3. How We Share Your Information</h2>
+      <p>We do not sell, trade, or rent your personal information to third parties. We may share your information in the following limited circumstances:</p>
+
+      <h3>Service Providers</h3>
+      <p>We may share your information with trusted third-party service providers who assist us in operating our site and conducting our business, including:</p>
+      <ul>
+        <li>PayPal (payment processing)</li>
+        <li>Formspree (contact form processing)</li>
+        <li>GitHub Pages (website hosting)</li>
+      </ul>
+      <p>These providers are contractually obligated to keep your information confidential and use it only for the services they provide to us.</p>
+
+      <h3>Legal Requirements</h3>
+      <p>We may disclose your information if required to do so by law, or if we believe in good faith that such action is necessary to comply with legal process, protect our rights, or protect the safety of others.</p>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="policy-section">
+      <h2>4. Cookies and Tracking Technologies</h2>
+      <p>Our site may use cookies and similar tracking technologies to enhance your browsing experience. Types of cookies we may use:</p>
+      <ul>
+        <li>Essential cookies: Required for the site to function properly</li>
+        <li>Analytics cookies: Help us understand how visitors interact with our site</li>
+        <li>Preference cookies: Remember your settings and preferences</li>
+      </ul>
+      <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, some features of our site may not function properly if cookies are disabled.</p>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="policy-section">
+      <h2>5. Data Retention</h2>
+      <p>We retain your personal information for as long as necessary to fulfill the purposes outlined in this Privacy Policy, unless a longer retention period is required by law. Specifically:</p>
+      <ul>
+        <li>Client project information is retained for a minimum of 7 years for tax and accounting purposes</li>
+        <li>Contact form submissions are retained for 2 years</li>
+        <li>Marketing preferences are retained until you opt out</li>
+      </ul>
+      <p>When we no longer need your information, we will securely delete or anonymize it.</p>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="policy-section">
+      <h2>6. Security of Your Information</h2>
+      <p>We implement reasonable administrative, technical, and physical security measures to protect your personal information from unauthorized access, use, or disclosure. These measures include:</p>
+      <ul>
+        <li>SSL/TLS encryption for data transmitted to and from our site</li>
+        <li>Secure payment processing through PayPal</li>
+        <li>Limited access to personal information by authorized personnel only</li>
+      </ul>
+      <p>However, no method of transmission over the Internet or electronic storage is 100% secure. While we strive to protect your information, we cannot guarantee its absolute security.</p>
+    </div>
+
+    <!-- Section 7 -->
+    <div class="policy-section">
+      <h2>7. Your Privacy Rights</h2>
+      <p>Depending on your location, you may have the following rights regarding your personal information:</p>
+      <ul>
+        <li>Right to Access: Request a copy of the personal information we hold about you</li>
+        <li>Right to Correction: Request that we correct inaccurate or incomplete information</li>
+        <li>Right to Deletion: Request that we delete your personal information</li>
+        <li>Right to Opt-Out: Opt out of any marketing communications at any time</li>
+        <li>Right to Data Portability: Request your data in a portable format</li>
+      </ul>
+      <p>To exercise any of these rights, please contact us using the information provided below. We will respond to your request within 30 days.</p>
+
+      <h3>California Residents</h3>
+      <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA), including the right to know what personal information is collected, the right to delete personal information, and the right to opt-out of the sale of personal information. We do not sell personal information.</p>
+
+      <h3>Washington State Residents</h3>
+      <p>Washington State residents have rights under the Washington My Health MY Data Act. For questions about your rights, please contact us directly.</p>
+    </div>
+
+    <!-- Section 8 -->
+    <div class="policy-section">
+      <h2>8. Children's Privacy</h2>
+      <p>Our site is not directed to children under the age of 13. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately and we will delete such information.</p>
+    </div>
+
+    <!-- Section 9 -->
+    <div class="policy-section">
+      <h2>9. Third-Party Websites</h2>
+      <p>Our site may contain links to third-party websites. We are not responsible for the privacy practices of those sites and encourage you to review their privacy policies. This Privacy Policy applies solely to information collected by Van Beard Design.</p>
+    </div>
+
+    <!-- Section 10 -->
+    <div class="policy-section">
+      <h2>10. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. When we do, we will revise the "Last Updated" date at the top of this page. We encourage you to review this policy periodically to stay informed about how we protect your information.</p>
+      <p>Your continued use of our site after any changes to this Privacy Policy constitutes your acceptance of the revised policy.</p>
+    </div>
+
+    <!-- Contact Box -->
+    <div class="contact-box">
+      <h2>Contact Us</h2>
+      <p>If you have questions or requests regarding this Privacy Policy, please contact us:</p>
+      <p><strong style="color:var(--white);">Van Beard Design</strong></p>
+      <p>Tukwila, WA</p>
+      <p>Email: <a href="mailto:van@websitesbyvan.com">van@websitesbyvan.com</a></p>
+      <p>Phone: <a href="tel:12064860508">(206) 486-0508</a></p>
+      <p>Website: <a href="../">WebsitesByVan.com</a></p>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">WebsitesByVan</div>
+    <p class="footer-copy">© 2026 Van Beard Design · Tukwila, WA · <a href="tel:12064860508">(206) 486-0508</a></p>
+  </footer>
+
+  <div class="gold-bar"></div>
+
+</body>
+</html>
