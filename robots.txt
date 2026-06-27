@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://speedyhypnosis.github.io/websitesbyvan/sitemap.xml
+Sitemap: https://websitesbyvan.com/sitemap.xml
